@@ -1514,3 +1514,23 @@
 2025-06-18 16:32:44,158 - INFO - E-mail de type 'alert' envoyé avec succès à djivogebeni@gmail.com
 2025-06-18 16:32:47,624 - INFO - E-mail de type 'alert' envoyé avec succès à peacemathieu@gmail.com
 2025-06-18 16:32:52,018 - INFO - E-mail de type 'alert' envoyé avec succès à prosperoloukpede@gmail.com
+2025-06-18 17:14:23,735 - DEBUG - C'est un message DEBUG
+2025-06-18 17:14:23,735 - INFO - C'est un message INFO
+2025-06-18 17:14:23,735 - WARNING - C'est un message WARNING
+2025-06-18 17:14:23,736 - ERROR - C'est un message ERROR
+2025-06-18 17:14:23,736 - CRITICAL - C'est un message CRITICAL
+2025-06-18 17:14:23,843 - INFO - /home/oloukpede/Bureau/GAIATHON25/API_HydroNex/app/commons/const/const/.env
+2025-06-18 17:14:26,115 - INFO - Génération des scripts de migration...
+2025-06-18 17:14:26,649 - INFO - Scripts de migration générés avec succès.
+2025-06-18 17:14:26,650 - INFO - Application des migrations...
+2025-06-18 17:14:26,663 - INFO - Migrations appliquées avec succès.
+2025-06-18 17:14:27,396 - DEBUG - C'est un message DEBUG
+2025-06-18 17:14:27,396 - INFO - C'est un message INFO
+2025-06-18 17:14:27,396 - WARNING - C'est un message WARNING
+2025-06-18 17:14:27,397 - ERROR - C'est un message ERROR
+2025-06-18 17:14:27,397 - CRITICAL - C'est un message CRITICAL
+2025-06-18 17:14:27,414 - INFO - /home/oloukpede/Bureau/GAIATHON25/API_HydroNex/app/commons/const/const/.env
+2025-06-18 17:14:27,940 - INFO - Génération des scripts de migration...
+2025-06-18 17:14:28,095 - INFO - Scripts de migration générés avec succès.
+2025-06-18 17:14:28,095 - INFO - Application des migrations...
+2025-06-18 17:14:28,104 - INFO - Migrations appliquées avec succès.
