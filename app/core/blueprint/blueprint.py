@@ -1,10 +1,10 @@
 from flask import Flask
-from routes.donnees_routes import donnees_bp
-from routes.dispositif_routes import dispositif_bp
-from routes.chatbot_routes import chatbot_bp
-from routes.newsletter_routes import newsletter_bp
-from routes.alerte_routes import alerte_bp
-from routes.auth_routes import auth_bp
+from app.routes.donnees_routes import donnees_bp
+from app.routes.dispositif_routes import dispositif_bp
+from app.routes.chatbot_routes import chatbot_bp
+from app.routes.newsletter_routes import newsletter_bp
+from app.routes.alerte_routes import alerte_bp
+from app.routes.auth_routes import auth_bp
 
 def initialize_blueprint_route(app: Flask):
     """

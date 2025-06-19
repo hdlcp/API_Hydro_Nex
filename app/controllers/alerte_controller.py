@@ -1,7 +1,7 @@
 from flask import request
-from commons.response.custom_response import CustomResponse
-from adaptater.alerte_recommandation.alerte_recommandation_adaptater import AlerteRecommandationAdaptater
-from commons.instances.instances import logger
+from app.commons.response.custom_response import CustomResponse
+from app.adaptater.alerte_recommandation.alerte_recommandation_adaptater import AlerteRecommandationAdaptater
+from app.commons.instances.instances import logger
 
 def get_alertes():
     try:

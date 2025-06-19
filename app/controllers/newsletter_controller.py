@@ -1,8 +1,8 @@
 from flask import request
-from commons.response.custom_response import CustomResponse
-from adaptater.newsletter.newsletter_adaptater import NewsletterAdaptater
-from services.smtp_function.send_mail import EmailService
-from commons.instances.instances import logger
+from app.commons.response.custom_response import CustomResponse
+from app.adaptater.newsletter.newsletter_adaptater import NewsletterAdaptater
+from app.services.smtp_function.send_mail import EmailService
+from app.commons.instances.instances import logger
 
 def subscribe():
     try:

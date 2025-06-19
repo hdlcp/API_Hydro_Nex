@@ -4,7 +4,7 @@ from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 import os
 
-from commons.instances.instances import logger
+from app.commons.instances.instances import logger
 
 class EmailService:
     def __init__(self):

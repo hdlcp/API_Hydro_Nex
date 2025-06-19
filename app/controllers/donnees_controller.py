@@ -1,11 +1,11 @@
 from flask import request
-from commons.response.custom_response import CustomResponse
-from adaptater.donnees.donnees_adaptater import DonneesAdaptater
-from adaptater.dispositif.dispositif_adaptater import DispositifAdaptater
-from adaptater.newsletter.newsletter_adaptater import NewsletterAdaptater
-from adaptater.alerte_recommandation.alerte_recommandation_adaptater import AlerteRecommandationAdaptater
-from services.smtp_function.send_mail import EmailService
-from commons.instances.instances import logger
+from app.commons.response.custom_response import CustomResponse
+from app.adaptater.donnees.donnees_adaptater import DonneesAdaptater
+from app.adaptater.dispositif.dispositif_adaptater import DispositifAdaptater
+from app.adaptater.newsletter.newsletter_adaptater import NewsletterAdaptater
+from app.adaptater.alerte_recommandation.alerte_recommandation_adaptater import AlerteRecommandationAdaptater
+from app.services.smtp_function.send_mail import EmailService
+from app.commons.instances.instances import logger
 
 def create_donnees():
     try:

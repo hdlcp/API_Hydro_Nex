@@ -1,7 +1,7 @@
 from pathlib import Path
 import os
 from dotenv import load_dotenv
-from commons.instances.instances import logger
+from app.commons.instances.instances import logger
 #from commons.instances.instances import logger 
 # Chemin vers le fichier .env, compatible multi-plateformes
 env_path = Path(__file__).resolve().parent.parent / 'const' / 'const' / '.env'

@@ -1,6 +1,6 @@
 from flask import jsonify, request
-from data.entities.admin.admin import Admin
-from data.entities.config.entities_config import db
+from app.data.entities.admin.admin import Admin
+from app.data.entities.config.entities_config import db
 import jwt
 import os
 from datetime import datetime, timedelta
@@ -9,9 +9,10 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from flask_jwt_extended import create_access_token
-from commons.response.custom_response import CustomResponse
-from adaptater.admin.admin_adaptater import AdminAdaptater
-from services.smtp_function.send_mail import EmailService
+from app.commons.response.custom_response import CustomResponse
+from app.adaptater.admin.admin_adaptater import AdminAdaptater
+from app.services.smtp_function.send_mail import EmailService
+from app.commons.instances.instances import logger
 
 def generate_token(admin_id):
     """Génère un token JWT pour l'administrateur"""

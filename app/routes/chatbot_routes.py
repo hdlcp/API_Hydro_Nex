@@ -1,5 +1,5 @@
 from flask import Blueprint
-from controllers.chatbot_controller import chat
+from app.controllers.chatbot_controller import chat
 
 chatbot_bp = Blueprint('chatbot', __name__)
 

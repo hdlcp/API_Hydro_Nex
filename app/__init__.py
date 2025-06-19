@@ -2,8 +2,8 @@ from dotenv import load_dotenv
 import os
 from pathlib import Path
 from app.commons.migrations_init.migrate_app import run_migrations
-from core.dependance.dependance import create_app
-from data.entities.config.entities_config import db
+from app.core.dependance.dependance import create_app
+from app.data.entities.config.entities_config import db
 
 # Détection du contexte : LOCAL ou RENDER
 env_path = Path(__file__).resolve().parent.parent / 'commons' / 'const' / 'const' / '.env'

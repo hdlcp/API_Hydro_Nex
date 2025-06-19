@@ -1,5 +1,5 @@
 from flask import Blueprint
-from controllers.donnees_controller import create_donnees, get_temps_reel, get_historique
+from app.controllers.donnees_controller import create_donnees, get_temps_reel, get_historique
 
 donnees_bp = Blueprint('donnees', __name__)
 

@@ -1,5 +1,5 @@
 from datetime import timedelta
-from commons.helpers.load_doten import Dotenv
+from app.commons.helpers.load_doten import Dotenv
 class Config:
     #SQLALCHEMY_DATABASE_URI = 'sqlite:///hydronex.db'  # Utilisation de SQLite
     SQLALCHEMY_DATABASE_URI = Dotenv.SQLALCHEMY_DATABASE_URI

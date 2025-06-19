@@ -1,6 +1,6 @@
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime, timezone
-from data.entities.config.entities_config import db
+from app.data.entities.config.entities_config import db
 from flask import request
 
 class Alerte_Recommandation(db.Model):

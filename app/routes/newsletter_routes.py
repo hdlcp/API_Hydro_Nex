@@ -1,5 +1,5 @@
 from flask import Blueprint
-from controllers.newsletter_controller import subscribe, unsubscribe
+from app.controllers.newsletter_controller import subscribe, unsubscribe
 
 newsletter_bp = Blueprint('newsletter', __name__)
 

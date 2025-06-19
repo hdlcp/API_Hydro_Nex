@@ -1,5 +1,5 @@
 from flask import Blueprint
-from controllers.auth_controller import (
+from app.controllers.auth_controller import (
     create_admin,
     login,
     change_password

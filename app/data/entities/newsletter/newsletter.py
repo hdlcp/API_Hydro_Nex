@@ -1,5 +1,5 @@
 from datetime import datetime
-from data.entities.config.entities_config import db
+from app.data.entities.config.entities_config import db
 
 class Newsletter(db.Model):
     __tablename__ = 'newsletter'

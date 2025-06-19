@@ -11,7 +11,7 @@ from jwt.exceptions import (
     InvalidAlgorithmError
 ) 
 from werkzeug.exceptions import HTTPException
-from commons.helpers.custom_response import CustomResponse
+from app.commons.helpers.custom_response import CustomResponse
 
 
 def register_error_handlers(app):

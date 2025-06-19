@@ -1,7 +1,7 @@
 from flask import request
-from commons.response.custom_response import CustomResponse
-from adaptater.chatbot.chatbot_adaptater import ChatbotAdaptater
-from commons.instances.instances import logger
+from app.commons.response.custom_response import CustomResponse
+from app.adaptater.chatbot.chatbot_adaptater import ChatbotAdaptater
+from app.commons.instances.instances import logger
 
 def chat():
     """Gère les interactions avec le chatbot"""

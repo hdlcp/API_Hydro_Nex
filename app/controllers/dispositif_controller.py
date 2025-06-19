@@ -1,7 +1,7 @@
 from flask import request
-from commons.response.custom_response import CustomResponse
-from adaptater.dispositif.dispositif_adaptater import DispositifAdaptater
-from commons.decorators.auth_decorator import token_required
+from app.commons.response.custom_response import CustomResponse
+from app.adaptater.dispositif.dispositif_adaptater import DispositifAdaptater
+from app.commons.decorators.auth_decorator import token_required
 
 @token_required
 def create_dispositif():

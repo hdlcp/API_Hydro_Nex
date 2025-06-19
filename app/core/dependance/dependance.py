@@ -4,10 +4,10 @@ from flask_cors import CORS
 from flask_jwt_extended import JWTManager
 from flask_swagger_ui import get_swaggerui_blueprint
 from flask_migrate import Migrate
-from commons.config.config.config import Config
-from commons.config.errors.errors import register_error_handlers
-from core.blueprint.blueprint import initialize_blueprint_route
-from data.entities.config.entities_config import db
+from app.commons.config.config.config import Config
+from app.commons.config.errors.errors import register_error_handlers
+from app.core.blueprint.blueprint import initialize_blueprint_route
+from app.data.entities.config.entities_config import db
 
 # Initialisation de JWT
 jwt = JWTManager()

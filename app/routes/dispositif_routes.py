@@ -1,5 +1,5 @@
 from flask import Blueprint
-from controllers.dispositif_controller import (
+from app.controllers.dispositif_controller import (
     create_dispositif,
     update_dispositif,
     get_dispositifs,

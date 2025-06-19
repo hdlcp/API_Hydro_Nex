@@ -1,5 +1,5 @@
 from flask import Blueprint
-from controllers.alerte_controller import get_alertes
+from app.controllers.alerte_controller import get_alertes
 
 alerte_bp = Blueprint('alerte', __name__)
  

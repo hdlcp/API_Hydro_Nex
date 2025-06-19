@@ -1,5 +1,5 @@
 from flask_migrate import migrate, upgrade, init
-from commons.instances.instances import logger
+from app.commons.instances.instances import logger
 import os
 
 def run_migrations(app):
