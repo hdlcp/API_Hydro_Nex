@@ -1,7 +1,7 @@
 from dotenv import load_dotenv
 import os
 from pathlib import Path
-from commons.migrations_init.migrate_app import run_migrations
+from app.commons.migrations_init.migrate_app import run_migrations
 from core.dependance.dependance import create_app
 from data.entities.config.entities_config import db
 
