@@ -2,43 +2,32 @@ services:
   - type: web
     name: hydronex-api
     env: python
-    plan: free
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app/__init__.py"
     envVars:
-      - key: PYTHON_VERSION
-        value: 3.11.0
-      - key: FLASK_ENV
-        value: production
-      - key: DATABASE_URL
-        fromDatabase:
-          name: hydronex-db
-          property: connectionString
-      - key: SQLALCHEMY_DATABASE_URI
-        fromDatabase:
-          name: hydronex-db
-          property: connectionString
-      - key: SECRET_KEY
-        generateValue: true
-      - key: JWT_SECRET_KEY
-        generateValue: true
-      - key: GEMINI_API_KEY
-        sync: false
+      - key: DB_HOST
+        value: srv1580.hstgr.io
+      - key: DB_PORT
+        value: 3306
+      - key: DB_USER
+        value: u433704782_oloukpede
+      - key: DB_PASS
+        value: Prosper##024
+      - key: DB_NAME
+        value: u433704782_hydronex_db
+      - key: data_base_uri
+        value: mysql://u433704782_oloukpede:Prosper##024@srv1580.hstgr.io:3306/u433704782_hydronex_db
       - key: smtp_server
-        sync: false
+        value: mail.otek-soft.com
       - key: smtp_port
         value: 587
       - key: smtp_user
-        sync: false
+        value: prosper.oloukpede@otek-soft.com
       - key: smtp_password
-        sync: false
-      - key: DEBUG
-        value: false
-      - key: LOG_LEVEL
-        value: INFO
-
-databases:
-  - name: hydronex-db
-    databaseName: hydronex
-    user: hydronex_user
-    plan: free 
+        value: V@sJPnMfWusa
+      - key: secret_key
+        value: hydronex_gaiathon25_2025
+      - key: JWT_SECRET_KEY
+        value: hydronex_gaiathon25_2025_jwt_key
+      - key: GEMINI_API_KEY
+        value: AIzaSyC_pWIwIiszQUYeAD8TmkKGFDsOCQJlg3s

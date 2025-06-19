@@ -26,6 +26,9 @@ def create_app():
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app.config['JWT_SECRET_KEY'] = os.getenv('JWT_SECRET_KEY', 'dev-secret-key')
     
+    print(f"Connecting to database: {app.config['SQLALCHEMY_DATABASE_URI']}")
+
+    
     # Configuration email
     app.config['MAIL_SERVER'] = os.getenv('smtp_server', 'smtp.gmail.com')
     app.config['MAIL_PORT'] = int(os.getenv('smtp_port', 587))

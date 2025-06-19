@@ -69,7 +69,7 @@ error.log
 access.log
 
 # Migrations (optional - uncomment if you want to ignore migrations)
-# migrations/
+migrations/
 # *migrations
 
 # IDE and editor files
