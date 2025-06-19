@@ -1,6 +1,6 @@
-from commons.instances.instances import logger
-from data.entities.admin.admin import Admin
-from data.entities.config.entities_config import db
+from app.commons.instances.instances import logger
+from app.data.entities.admin.admin import Admin
+from app.data.entities.config.entities_config import db
 from werkzeug.security import generate_password_hash, check_password_hash
 import jwt
 import os

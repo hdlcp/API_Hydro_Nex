@@ -1,6 +1,6 @@
-from commons.instances.instances import logger
-from data.entities.dispositif.dispositif import Dispositif
-from data.entities.config.entities_config import db
+from app.commons.instances.instances import logger
+from app.data.entities.dispositif.dispositif import Dispositif
+from app.data.entities.config.entities_config import db
 
 class DispositifAdaptater:
     @staticmethod

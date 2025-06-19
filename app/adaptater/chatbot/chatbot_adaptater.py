@@ -1,4 +1,4 @@
-from commons.instances.instances import logger
+from app.commons.instances.instances import logger
 import google.generativeai as genai
 import os
 

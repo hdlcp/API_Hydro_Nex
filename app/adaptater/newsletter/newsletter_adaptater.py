@@ -1,6 +1,6 @@
-from commons.instances.instances import logger
-from data.entities.newsletter.newsletter import Newsletter
-from data.entities.config.entities_config import db
+from app.commons.instances.instances import logger
+from app.data.entities.newsletter.newsletter import Newsletter
+from app.data.entities.config.entities_config import db
 
 class NewsletterAdaptater:
     @staticmethod
