@@ -5,10 +5,10 @@
     "description": "API pour la gestion des données hydrologiques",
     "version": "1.0.0"
   },
-  "host": "127.0.0.1:5000",
+  "host": "api-hydro-nex.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "consumes": [
     "application/json"
