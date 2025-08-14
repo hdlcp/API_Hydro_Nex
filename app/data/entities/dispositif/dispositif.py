@@ -10,8 +10,8 @@ class Dispositif(db.Model):
     nom = db.Column(db.String(200), unique=True, nullable=False)
     localisation = db.Column(db.String(200), unique=True, nullable=False)
     statut = db.Column(db.String(20), nullable=False)  # 'actif' ou 'inactif'
-    created_at = db.Column(db.DateTime, default=datetime.now(timezone.utc), nullable=False)
-    updated_at = db.Column(db.DateTime, default=datetime.now(timezone.utc), onupdate=datetime.now(timezone.utc), nullable=False)
+    created_at = db.Column(db.DateTime(timezone=True), default=lambda: datetime.now(timezone.utc), nullable=False)
+    updated_at = db.Column(db.DateTime(timezone=True), default=lambda: datetime.now(timezone.utc), onupdate=lambda: datetime.now(timezone.utc), nullable=False)
 
     # Relations
     donnees = db.relationship('Donnees', backref='dispositif', lazy=True)

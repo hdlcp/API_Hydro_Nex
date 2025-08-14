@@ -28,11 +28,22 @@ def create_donnees():
         
         # Vérifier les seuils critiques et créer une alerte si nécessaire
         alerte = None
-        if data.get('temperature', 0) > 30 or data.get('salinity', 0) > 40:
+        if (
+            data.get('temperature', 0) < 15 or data.get('temperature', 0) > 32 or
+            data.get('salinity', 0) < 28 or data.get('salinity', 0) > 37 or
+            data.get('ph', 0) < 7.5 or data.get('ph', 0) > 8.5 or
+            data.get('turbidity', 0) > 10
+            ):
             # Créer l'alerte
             alerte_data = {
                 'dispositif_id': dispositif_id,
-                'alerte': f"Valeurs critiques détectées - Température: {data.get('temperature')}°C, Salinité: {data.get('salinity')}",
+                'alerte': (
+                    f"Valeurs critiques détectées - "
+                    f"Température: {data.get('temperature')}°C, "
+                    f"Salinité: {data.get('salinity')} PSU, "
+                    f"pH: {data.get('ph')}, "
+                    f"Turbidité: {data.get('turbidity')} NTU"
+                ),
                 'recommandation': "Veuillez vérifier le dispositif et ajuster les paramètres si nécessaire."
             }
             alerte = AlerteRecommandationAdaptater.create_alerte(alerte_data)

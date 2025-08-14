@@ -10,8 +10,8 @@ class Alerte_Recommandation(db.Model):
     dispositif_id = db.Column(db.Integer, db.ForeignKey('dispositifs.id'), nullable=False)
     alerte = db.Column(db.String(200), nullable=False)
     recommandation = db.Column(db.String(200), nullable=False)
-    created_at = db.Column(db.DateTime, default=datetime.now(timezone.utc), nullable=False)
-   
+    created_at = db.Column(db.DateTime(timezone=True), default=lambda: datetime.now(timezone.utc), nullable=False)
+
     def to_dict(self):
         return {
             "id": self.id,

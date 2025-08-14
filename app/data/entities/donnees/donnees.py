@@ -13,7 +13,8 @@ class Donnees(db.Model):
     ph = db.Column(db.Float, nullable=False)
     turbidity = db.Column(db.Float, nullable=False)
     battery_level = db.Column(db.Float, nullable=False)
-    created_at = db.Column(db.DateTime, default=datetime.now(timezone.utc), nullable=False)
+    created_at = db.Column(db.DateTime(timezone=True), default=lambda: datetime.now(timezone.utc), nullable=False)
+    
    
     def to_dict(self):
         return {

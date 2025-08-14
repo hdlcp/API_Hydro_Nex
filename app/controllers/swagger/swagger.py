@@ -21,7 +21,7 @@ def setup_swagger(app):
     swagger_template = {
         "swagger": "2.0",
         "info": {
-            "title": "SNAKING LEARNING",
+            "title": "",
             "description": "API documentation",
             "version": "1.0.0"
         },
